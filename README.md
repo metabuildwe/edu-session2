@@ -88,14 +88,14 @@ curl -X POST http://localhost:8080/ \
   -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","method":"message/send","id":"1",
        "params":{"message":{"role":"user",
-       "parts":[{"type":"text","text":"다음 글을 요약해줘: Google announced the A2A protocol in April 2025 as an open standard for agent communication."}]}}}'
+       "parts":[{"kind":"text","text":"다음 글을 요약해줘: Google announced the A2A protocol in April 2025 as an open standard for agent communication."}]}}}'
 
 # 번역 요청
 curl -X POST http://localhost:8080/ \
   -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","method":"message/send","id":"2",
        "params":{"message":{"role":"user",
-       "parts":[{"type":"text","text":"다음 글을 한국어로 번역해줘: OpenAI released GPT-5 in August 2026."}]}}}'
+       "parts":[{"kind":"text","text":"다음 글을 한국어로 번역해줘: OpenAI released GPT-5 in August 2026."}]}}}'
 ```
 
 ---
