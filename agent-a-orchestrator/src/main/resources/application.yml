@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: agent-a-orchestrator
+
+logging:
+  level:
+    com.edu: INFO
+
+a2a:
+  server:
+    name: "Orchestrator Agent (Agent A)"
+    description: "Analyzes user intent and dynamically routes to Summarizer (Agent B) and Translator (Agent C)."
+    version: "1.0.0"
+    url: "http://localhost:8080"
+    skills:
+      - id: summarize
+        name: "Summarize"
+        description: "Summarize English text via Agent B"
+      - id: translate
+        name: "Translate"
+        description: "Translate English text to Korean via Agent C"
+      - id: summarize-and-translate
+        name: "Summarize & Translate"
+        description: "English -> Summarize -> Translate to Korean pipeline"

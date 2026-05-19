@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: agent-c-translator
+
+logging:
+  level:
+    com.edu: INFO
+
+a2a:
+  server:
+    name: "Translator Agent (Agent C)"
+    description: "Translates English text to natural Korean."
+    version: "1.0.0"
+    url: "http://localhost:8082"
+    skills:
+      - id: translate
+        name: "English to Korean Translation"
+        description: "Translate English text into natural Korean"

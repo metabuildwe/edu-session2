@@ -1,0 +1,5 @@
+rootProject.name = 'session2-a2a-pipeline'
+
+include 'agent-a-orchestrator'
+include 'agent-b-summarizer'
+include 'agent-c-translator'

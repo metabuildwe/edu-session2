@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: agent-b-summarizer
+
+logging:
+  level:
+    com.edu: INFO
+
+a2a:
+  server:
+    name: "Summarizer Agent (Agent B)"
+    description: "Summarizes English text into 2-3 sentences."
+    version: "1.0.0"
+    url: "http://localhost:8081"
+    skills:
+      - id: summarize
+        name: "Text Summarization"
+        description: "Summarize articles/documents into 2-3 key sentences"

@@ -1,0 +1,14 @@
+dependencies {
+    // A2A 클라이언트 (a2a4j Spring Boot Starter)
+    implementation "io.github.a2ap:a2a4j-client-spring-boot-starter:${a2a4jVersion}"
+
+    // A2A 서버 (오케스트레이터 자신도 A2A 서버)
+    implementation "io.github.a2ap:a2a4j-server-spring-boot-starter:${a2a4jVersion}"
+
+    // LangChain4j + GPT-5 Nano (의도 분류용)
+    implementation "dev.langchain4j:langchain4j:${langchain4jVersion}"
+    implementation "dev.langchain4j:langchain4j-open-ai:${langchain4jVersion}"
+
+    // .env 파일 로딩
+    implementation 'io.github.cdimascio:dotenv-java:3.0.0'
+}
